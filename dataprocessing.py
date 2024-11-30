@@ -31,7 +31,7 @@ with open(output_file, mode='w', newline='') as csv_file:
     
     for row in merged_data:
         csv_writer.writerow({
-            'sales': '$'+str(row['sales']),
+            'sales': row['sales'],
             'date': row['date'],
             'region': row['region']
         })
